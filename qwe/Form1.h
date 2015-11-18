@@ -16,7 +16,6 @@ namespace qwe {
 	using namespace System::Text;
 
 	/// <summary>
-	/// Сводка для Form1
 	/// </summary>
 	public struct RBT {
 		int key;
@@ -39,13 +38,13 @@ namespace qwe {
 			InitializeComponent();
 			g = this->CreateGraphics();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: Г¤Г®ГЎГ ГўГјГІГҐ ГЄГ®Г¤ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г 
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// ГЋГ±ГўГ®ГЎГ®Г¤ГЁГІГј ГўГ±ГҐ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГ¬Г»ГҐ Г°ГҐГ±ГіГ°Г±Г».
 		/// </summary>
 		~Form1()
 		{
@@ -64,14 +63,14 @@ namespace qwe {
 
 	private:
 		/// <summary>
-		/// Требуется переменная конструктора.
+		/// Г’Г°ГҐГЎГіГҐГІГ±Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г .
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Обязательный метод для поддержки конструктора - не изменяйте
-		/// содержимое данного метода при помощи редактора кода.
+		/// ГЋГЎГїГ§Г ГІГҐГ«ГјГ­Г»Г© Г¬ГҐГІГ®Г¤ Г¤Г«Гї ГЇГ®Г¤Г¤ГҐГ°Г¦ГЄГЁ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°Г  - Г­ГҐ ГЁГ§Г¬ГҐГ­ГїГ©ГІГҐ
+		/// Г±Г®Г¤ГҐГ°Г¦ГЁГ¬Г®ГҐ Г¤Г Г­Г­Г®ГЈГ® Г¬ГҐГІГ®Г¤Г  ГЇГ°ГЁ ГЇГ®Г¬Г®Г№ГЁ Г°ГҐГ¤Г ГЄГІГ®Г°Г  ГЄГ®Г¤Г .
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -89,7 +88,7 @@ namespace qwe {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(110, 51);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"Добавляем элемент";
+			this->button2->Text = L"Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГЅГ«ГҐГ¬ГҐГ­ГІ";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
@@ -110,7 +109,7 @@ namespace qwe {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(110, 51);
 			this->button1->TabIndex = 3;
-			this->button1->Text = L"Удаляем элемент";
+			this->button1->Text = L"Г“Г¤Г Г«ГїГҐГ¬ ГЅГ«ГҐГ¬ГҐГ­ГІ";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 		
@@ -175,23 +174,23 @@ namespace qwe {
 		}
 		void RB_Insert_Fixup(RBT **Node,RBT *newNode){
 			while(newNode->parent->color == RED){
-				MessageBox::Show("Перекрашиваем","Сообщение");
-				if(newNode->parent == newNode->parent->parent->left){		//родитель нового узла  является 
-					RBT *y = newNode->parent->parent->right;				//правым или левым потомком
+				MessageBox::Show("ГЏГҐГ°ГҐГЄГ°Г ГёГЁГўГ ГҐГ¬","Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ");
+				if(newNode->parent == newNode->parent->parent->left){		//Г°Г®Г¤ГЁГІГҐГ«Гј Г­Г®ГўГ®ГЈГ® ГіГ§Г«Г   ГїГўГ«ГїГҐГІГ±Гї 
+					RBT *y = newNode->parent->parent->right;				//ГЇГ°Г ГўГ»Г¬ ГЁГ«ГЁ Г«ГҐГўГ»Г¬ ГЇГ®ГІГ®Г¬ГЄГ®Г¬
 					if(y->color == RED){
-						MessageBox::Show("Перекрашиваем","Сообщение");//цвет дяди нового узла 
-						newNode->parent->color = BLACK;				//случай 1 когда дядя красный
-						y->color = BLACK;						//рисунок на стр 349
+						MessageBox::Show("ГЏГҐГ°ГҐГЄГ°Г ГёГЁГўГ ГҐГ¬","Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ");//Г¶ГўГҐГІ Г¤ГїГ¤ГЁ Г­Г®ГўГ®ГЈГ® ГіГ§Г«Г  
+						newNode->parent->color = BLACK;				//Г±Г«ГіГ·Г Г© 1 ГЄГ®ГЈГ¤Г  Г¤ГїГ¤Гї ГЄГ°Г Г±Г­Г»Г©
+						y->color = BLACK;						//Г°ГЁГ±ГіГ­Г®ГЄ Г­Г  Г±ГІГ° 349
 						newNode->parent->parent->color = RED;
 						newNode = newNode->parent->parent;			//------
 					} else { if(newNode == newNode->parent->right){
 						newNode = newNode->parent;	
-						 MessageBox::Show("Левый поворот","Поворот");//случай 2 дядя красный и новый узел 
-						Left_Rotate(Node,newNode);					//является правым потомком
-					}		//стр 350
-					newNode->parent->color = BLACK;					//случай 3 дядя красный и новый узел 
+						 MessageBox::Show("Г‹ГҐГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");//Г±Г«ГіГ·Г Г© 2 Г¤ГїГ¤Гї ГЄГ°Г Г±Г­Г»Г© ГЁ Г­Г®ГўГ»Г© ГіГ§ГҐГ« 
+						Left_Rotate(Node,newNode);					//ГїГўГ«ГїГҐГІГ±Гї ГЇГ°Г ГўГ»Г¬ ГЇГ®ГІГ®Г¬ГЄГ®Г¬
+					}		//Г±ГІГ° 350
+					newNode->parent->color = BLACK;					//Г±Г«ГіГ·Г Г© 3 Г¤ГїГ¤Гї ГЄГ°Г Г±Г­Г»Г© ГЁ Г­Г®ГўГ»Г© ГіГ§ГҐГ« 
 					newNode->parent->parent->color = RED;	
-						 MessageBox::Show("Правый поворот","Поворот");//является левым потомком
+						 MessageBox::Show("ГЏГ°Г ГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");//ГїГўГ«ГїГҐГІГ±Гї Г«ГҐГўГ»Г¬ ГЇГ®ГІГ®Г¬ГЄГ®Г¬
 					Right_Rotate(Node,newNode->parent->parent);		//
 					}
 				}
@@ -205,12 +204,12 @@ namespace qwe {
 					} else {
 						if(newNode == newNode->parent->left){
 							newNode = newNode->parent;
-						 MessageBox::Show("Правый поворот","Поворот");
+						 MessageBox::Show("ГЏГ°Г ГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 							Right_Rotate(Node,newNode);
 						}
 						newNode->parent->color = BLACK;
 						newNode->parent->parent->color = RED;
-						MessageBox::Show("Левый поворот","Поворот");
+						MessageBox::Show("Г‹ГҐГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 						Left_Rotate(Node,newNode->parent->parent);
 					}
 				}
@@ -276,7 +275,7 @@ namespace qwe {
 					if(w->color == RED){
 						w->color = BLACK;
 						x->parent->color = RED;
-						MessageBox::Show("Левый поворот","Поворот");
+						MessageBox::Show("Г‹ГҐГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 						Left_Rotate(Node,x->parent);
 						w = x->parent->right;
 					}
@@ -288,14 +287,14 @@ namespace qwe {
 						if(w->right->color == BLACK){
 							w->left->color = BLACK;
 							w->color = RED;
-							MessageBox::Show("Правый поворот","Поворот");
+							MessageBox::Show("ГЏГ°Г ГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 							Right_Rotate(Node, w);
 							w = x->parent->right;
 						}
 						w->color = x->parent->color;
 						x->parent->color = BLACK;
 						w->right->color = BLACK;
-						MessageBox::Show("Левый поворот","Поворот");
+						MessageBox::Show("Г‹ГҐГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 						Left_Rotate(Node, x->parent);
 						x = *(Node);
 					}
@@ -305,7 +304,7 @@ namespace qwe {
 					if(w->color == RED){
 						w->color = BLACK;
 						x->parent->color = RED;
-						MessageBox::Show("Правый поворот","Поворот");
+						MessageBox::Show("ГЏГ°Г ГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 						Right_Rotate(Node,x->parent);
 						w = x->parent->left;
 					}
@@ -317,14 +316,14 @@ namespace qwe {
 						if(w->left->color == BLACK){
 							w->right->color = BLACK;
 							w->color = RED;
-							MessageBox::Show("Левый поворот","Поворот");
+							MessageBox::Show("Г‹ГҐГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 							Left_Rotate(Node, w);
 							w = x->parent->left;
 						}
 						w->color = x->parent->color;
 						x->parent->color = BLACK;
 						w->left->color = BLACK;
-						MessageBox::Show("Правый поворот","Поворот");
+						MessageBox::Show("ГЏГ°Г ГўГ»Г© ГЇГ®ГўГ®Г°Г®ГІ","ГЏГ®ГўГ®Г°Г®ГІ");
 						Right_Rotate(Node, x->parent);
 						x = (*Node);
 					}
@@ -425,7 +424,7 @@ namespace qwe {
 					 draw_RBT(tree,500,500,40,2);
 					 }
 					 catch(Exception^ e){
-						 MessageBox::Show("Данного элемента не существует!","Ошибка!");
+						 MessageBox::Show("Г„Г Г­Г­Г®ГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г­ГҐ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ!","ГЋГёГЁГЎГЄГ !");
 					 }
 				 }
 				 textBox2->Text="";
