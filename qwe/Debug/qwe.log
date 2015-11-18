@@ -1,0 +1,9 @@
+﻿  qwe.cpp
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(545): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(545): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(554): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(554): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(555): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(555): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+d:\education\visual studio 2010\projects\qwe\qwe\Form1.h(584): warning C4101: e: неиспользованная локальная переменная
+  qwe.vcxproj -> D:\education\Visual Studio 2010\Projects\qwe\Debug\qwe.exe

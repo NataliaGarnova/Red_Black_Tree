@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  qwe.cpp
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(389): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(389): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(397): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(397): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(398): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(398): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+h:\university\2 course\1 семестр\сиаод\red_black_tree\qwe\Form1.h(427): warning C4101: e: неиспользованная локальная переменная
+  Создание кода...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  qwe.vcxproj -> H:\University\2 course\1 семестр\СИАОД\Red_Black_Tree\Release\qwe.exe
